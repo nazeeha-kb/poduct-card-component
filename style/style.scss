@@ -1,0 +1,116 @@
+@use "./variables" as variables;
+@use "./fonts" as fonts;
+
+body {
+  margin: 0;
+}
+
+main {
+  background-color: variables.$cream;
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: variables.$white;
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+  margin: 6em 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// image now can't be rendered wider than thier containing element
+img,
+source {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.title {
+  margin: 0;
+}
+
+h4 {
+  color: variables.$grey;
+  font-size: smaller;
+  letter-spacing: 6px;
+}
+
+p {
+  color: variables.$grey;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  .now-price {
+    margin-block: 10px 25px;
+    color: variables.$primaryGreen500;
+  }
+  .cutoff-price {
+    color: variables.$grey;
+    text-decoration: line-through;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+}
+
+button {
+  background-color: variables.$primaryGreen500;
+  color: variables.$white;
+  border: none;
+  flex-grow: 1;
+  padding: 15px 10px;
+  border-radius: 10px;
+  &:hover {
+    cursor: pointer;
+    background-color: variables.$primaryGreen700;
+  }
+}
+
+// media queries
+
+@media (min-width: 45em) {
+  .card {
+    flex-direction: row;
+    margin: 0 25px;
+    max-height: fit-content;
+    max-width: 42rem;
+  }
+  .content {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    align-items: center;
+  }
+  picture {
+    width: 65em;
+    height: 30em;
+    object-fit: contain;
+  }
+  .title {
+    font-size: 2.2em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 35em) and (max-width: 45em) {
+  .card {
+    max-width: 60vw;
+  }
+}
