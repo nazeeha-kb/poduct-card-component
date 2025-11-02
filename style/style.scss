@@ -89,11 +89,10 @@ button {
   .card {
     flex-direction: row;
     margin: 0 25px;
-    max-height: 50rem;
+    max-height: 38rem;
     max-width: 38rem;
   }
   .content {
-    gap: 2px;
     padding: 28px;
     display: flex;
     flex-direction: column;
@@ -103,7 +102,7 @@ button {
   }
   picture {
     width: 60em;
-    height: 29em;
+    max-height: 28em;
     object-fit: contain;
   }
   .title {
