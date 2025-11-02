@@ -73,6 +73,10 @@ button {
   flex-grow: 1;
   padding: 15px 10px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   &:hover {
     cursor: pointer;
     background-color: variables.$primaryGreen700;
@@ -85,10 +89,11 @@ button {
   .card {
     flex-direction: row;
     margin: 0 25px;
-    max-height: fit-content;
-    max-width: 42rem;
+    max-height: 50rem;
+    max-width: 38rem;
   }
   .content {
+    gap: 2px;
     padding: 28px;
     display: flex;
     flex-direction: column;
@@ -97,15 +102,18 @@ button {
     align-items: center;
   }
   picture {
-    width: 65em;
-    height: 30em;
+    width: 60em;
+    height: 29em;
     object-fit: contain;
   }
   .title {
-    font-size: 2.2em;
+    font-size: 2em;
   }
   p {
-    font-size: 1.2em;
+    font-size: 1em;
+  }
+  button {
+    height: 1em;
   }
 }
 
