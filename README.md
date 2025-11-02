@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![Screenshot](./Screenshot.png)
 
 ## My process
 
@@ -26,5 +26,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/nazeeha-kb)
-- Twitter - [@yourusername](https://x.com/Nazeeha126889)
+- Frontend Mentor - [@nazeeha-kb](https://www.frontendmentor.io/profile/nazeeha-kb)
+- Twitter - [@Nazeeha126889](https://x.com/Nazeeha126889)
