@@ -13,32 +13,11 @@
     />
 
     <title>Frontend Mentor | Product preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
       <article class="card">
-        <picture>
-          <source
-            srcset="./images/image-product-desktop.jpg"
-            media="(min-width: 45em)"
-          />
-          <img
-            src="./images/image-product-mobile.jpg"
-            alt="Image of perfume"
-            loading="lazy"
-          />
-        </picture>
+        <div class="image"></div>
         <section class="content">
           <header>
             <h4 class="montserrat-500">PERFUME</h4>
@@ -55,7 +34,14 @@
           </div>
 
           <button class="purchase montserrat-700">
-            <img src="./images/cart-shopping-solid-full.svg" alt="cart icon" width="22px" height="22px"> <span>Add to Cart</span></button>
+            <img
+              src="./images/cart-shopping-solid-full.svg"
+              alt="cart icon"
+              width="22px"
+              height="22px"
+            />
+            <span>Add to Cart</span>
+          </button>
         </section>
       </article>
     </main>
