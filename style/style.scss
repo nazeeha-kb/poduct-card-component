@@ -37,7 +37,7 @@ main {
 //   block-size: auto;
 // }
 .image {
-  background-image: url('/images/image-product-mobile.jpg');
+  background-image: url('../images/image-product-mobile.jpg');
   background-size: cover;
   max-width: 100%;
   height: 40vh ;
@@ -110,7 +110,7 @@ button {
   }
 
   .image{
-    background-image: url("/images/image-product-desktop.jpg");
+    background-image: url("../images/image-product-desktop.jpg");
     width: 100%;
     height: inherit;
     background-position: center;
