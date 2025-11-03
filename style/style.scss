@@ -31,21 +31,20 @@ main {
 }
 
 // image now can't be rendered wider than thier containing element
-// img,
-// source {
-//   max-inline-size: 100%;
-//   block-size: auto;
-// }
-.image {
-  background-image: url('../images/image-product-mobile.jpg');
-  background-size: cover;
-  max-width: 100%;
-  height: 40vh ;
-}
 
+img,
+source {
+  max-inline-size: 100%;
+  block-size: auto;
+}
 
 .title {
   margin: 0;
+}
+
+.icon {
+  width: 1.8em;
+  height: 1.8em;
 }
 
 h4 {
@@ -96,12 +95,13 @@ button {
   .card {
     flex-direction: row;
     margin: 0 25px;
-    max-height: 38rem;
+    max-height: 34rem;
     max-width: 40rem;
   }
   .content {
     padding: 28px;
     display: flex;
+    gap: 4px;
     width: 88%;
     flex-direction: column;
   }
@@ -109,14 +109,19 @@ button {
     align-items: center;
   }
 
-  .image{
-    background-image: url("../images/image-product-desktop.jpg");
-    width: 100%;
-    height: inherit;
-    background-position: center;
+  picture {
+    width: 50%;
+    flex: none;
+    display: block;
   }
 
-  button{
+  img,
+  source {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  button {
     padding-block: 26px;
   }
   .title {
@@ -126,6 +131,6 @@ button {
     font-size: 1em;
   }
   button {
-    height: 1em;
+    padding: 15px 32px; 
   }
 }

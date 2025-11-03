@@ -17,7 +17,14 @@
   <body>
     <main>
       <article class="card">
-        <div class="image"></div>
+        <picture>
+          <source
+            srcset="./images/image-product-desktop.jpg"
+            media="(min-width: 30em)"
+          />
+          <img src="./images/image-product-mobile.jpg" alt="Perfume" />
+        </picture>
+
         <section class="content">
           <header>
             <h4 class="montserrat-500">PERFUME</h4>
@@ -37,8 +44,7 @@
             <img
               src="./images/cart-shopping-solid-full.svg"
               alt="cart icon"
-              width="22px"
-              height="22px"
+              class="icon"
             />
             <span>Add to Cart</span>
           </button>
